@@ -7,29 +7,29 @@ import { useMutate } from 'restful-react';
 import { useRouter } from 'next/router';
 
 const Register = () => {
-  const [info, setInfo] = useState();
-  const { mutate: registerUser, loading, error } = useMutate({
+  const [ info, setInfo, ] = useState();
+  const { mutate: registerUser, loading, error, } = useMutate( {
     verb: 'POST',
-    path: 'register'
-  });
-  const { register, handleSubmit } = useForm();
+    path: 'register',
+  } );
+  const { register, handleSubmit, } = useForm();
 
   const onSubmit = data => {
     setInfo();
-    registerUser(data)
-      .then(_ => setInfo('Please visit your email address and active your account'));
-  }
+    registerUser( data )
+      .then( _ => setInfo( 'Please visit your email address and active your account' ) );
+  };
 
   return (
     <div className="bwm-form">
       <Row>
-        <Col md={{ span: 6, offset: 3 }}>
+        <Col md={ { span: 6, offset: 3, } }>
           <PageTitle text="Register"/>
-          <Form onSubmit={handleSubmit(onSubmit)}>
+          <Form onSubmit={ handleSubmit( onSubmit ) }>
             <Form.Group controlId="formUsername">
               <Form.Label>Username</Form.Label>
               <Form.Control
-                ref={register}
+                ref={ register }
                 name="username"
                 type="text"
                 placeholder="Enter username"
@@ -38,7 +38,7 @@ const Register = () => {
             <Form.Group controlId="formEmail">
               <Form.Label>Email</Form.Label>
               <Form.Control
-                ref={register}
+                ref={ register }
                 name="email"
                 type="email"
                 placeholder="Enter email" />
@@ -49,23 +49,23 @@ const Register = () => {
             <Form.Group controlId="formPassword">
               <Form.Label>Password</Form.Label>
               <Form.Control
-                ref={register}
+                ref={ register }
                 name="password"
                 type="password"
                 placeholder="Password" />
             </Form.Group>
             { info &&
               <Alert variant="success">
-                {info}
+                { info }
               </Alert>
             }
             { error &&
               <Alert variant="danger">
-                {error?.data}
+                { error?.data }
               </Alert>
             }
             <Button
-              disabled={loading}
+              disabled={ loading }
               variant="primary"
               type="submit">
               Submit
@@ -74,9 +74,7 @@ const Register = () => {
         </Col>
       </Row>
     </div>
-  )
-}
-
-
+  );
+};
 
 export default Register;

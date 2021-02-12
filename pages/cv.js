@@ -7,7 +7,7 @@ const CV = () => {
       <PageTitle text="CV" />
       Cv Page
     </Section>
-  )
-}
+  );
+};
 
 export default CV;

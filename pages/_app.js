@@ -11,18 +11,17 @@ const App = ( { Component, pageProps, } ) => {
   const Wrapper = Component.name === 'PortfolioDetail' ? React.Fragment : Container;
 
   return (
-    <div className="portfolio-app">
-      <Navbar />
-      { isHome && <Hero /> }
-      <Wrapper>
-        <Component { ...pageProps } />
-      </Wrapper>
-      { isHome && <Footer /> }
-    </div>
+    <RestfulProvider base="http://localhost:3001/api">
+      <div className="portfolio-app">
+        <Navbar />
+        { isHome && <Hero /> }
+        <Wrapper>
+          <Component { ...pageProps } />
+        </Wrapper>
+        { isHome && <Footer /> }
+      </div>
+    </RestfulProvider>
   );
 };
 
-export default ( { ...props } ) =>
-  <RestfulProvider base="http://localhost:3001/api">
-    <App { ...props }/>
-  </RestfulProvider>;
+export default App;
