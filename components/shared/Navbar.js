@@ -1,12 +1,11 @@
 
-
 import { Navbar, Nav } from 'react-bootstrap';
-import Link from 'next/link'
+import Link from 'next/link';
 
-const AppLink = ({children, className, href}) =>
-  <Link href={href}>
-    <a className={className}>{children}</a>
-  </Link>
+const AppLink = ( { children, className, href, } ) =>
+  <Link href={ href }>
+    <a className={ className }>{ children }</a>
+  </Link>;
 
 const AppNavbar = () => {
 
@@ -16,7 +15,7 @@ const AppNavbar = () => {
         <AppLink
           href="/"
           className="navbar-brand mr-3 font-weight-bold">
-          YourSite
+          TestSite
         </AppLink>
         <Navbar.Toggle />
         <Navbar.Collapse>
@@ -42,7 +41,7 @@ const AppNavbar = () => {
         </Navbar.Collapse>
       </Navbar>
     </div>
-  )
-}
+  );
+};
 
 export default AppNavbar;

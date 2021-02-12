@@ -1,8 +1,11 @@
 require( 'dotenv' ).config();
+
 const express = require( 'express' );
 const app = express();
+
 const User = require( './db/user' );
 const PendingUser = require( './db/pending-user' );
+
 const bodyParser = require( 'body-parser' );
 const { sendConfirmationEmail, } = require( './mailer' );
 

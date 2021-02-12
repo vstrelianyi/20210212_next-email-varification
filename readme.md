@@ -19,3 +19,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 Open [http://localhost:3001/api/test](http://localhost:3001/api/test) with your browser to test API Server
 
 Follow Lectures at [Youtube](https://www.youtube.com/channel/UCBA_4Q-Gk4bJxRrtpfdvTzw) with your browser to test API Server
+
+FULL LECTURE
+https://www.youtube.com/playlist?list=PLJrKZkBAZzQuLFn7Q24UOBG9_B8-vjcOx

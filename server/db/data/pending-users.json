@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "_id": "_zxsks0xci",
+    "email": "new@gmail.com",
+    "username": "new",
+    "password": "$2a$10$spesi28P8WJznRELftSZWuMyFLy303j1vqM1XKohVWorzCK1KEYGy"
+  },
+  {
+    "_id": "_3s19qc78t",
+    "email": "test@gmail",
+    "username": "test",
+    "password": "$2a$10$hZVsLeNf5zPic.P1U6VCiOdVWJDopNfv9kV3C7lCFFO5.YitQlBUO"
+  },
+  {
+    "_id": "_s8ykzrxbg",
+    "email": "test1@gmail.com",
+    "username": "test1",
+    "password": "$2a$10$yfZCvAFVAoSPPL5i.vqksOwyKcMop18f2Z7lv601/DK7CXUCo0q5u"
+  }
+]

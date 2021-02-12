@@ -9,7 +9,7 @@ const ForumCategories = () => {
         <div className="row">
           <div className="col-md-4">
             <div className="fj-category-container">
-            <a className="fj-category subtle-shadow no-border" href="/forum/categories/someId">
+              <a className="fj-category subtle-shadow no-border" href="/forum/categories/someId">
                 <div className="category-information">
                   <div className="heading gray-90">
                     General Discussion
@@ -23,7 +23,7 @@ const ForumCategories = () => {
           </div>
           <div className="col-md-4">
             <div className="fj-category-container">
-            <a className="fj-category subtle-shadow no-border" href="/forum/categories/someId">
+              <a className="fj-category subtle-shadow no-border" href="/forum/categories/someId">
                 <div className="category-information">
                   <div className="heading gray-90">
                     Other Discussion
@@ -52,9 +52,7 @@ const ForumCategories = () => {
         </div>
       </section>
     </>
-  )
-}
-
-
+  );
+};
 
 export default ForumCategories;
