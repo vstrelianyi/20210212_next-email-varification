@@ -11,12 +11,12 @@ const Home = () => (
     </Section>
     <Link
       href="/portfolios">
-        <a className="btn btn-main bg-blue ttu">See More Portfolios</a>
+      <a className="btn btn-main bg-blue ttu">See More Portfolios</a>
     </Link>
     <Section>
       <NotUsed />
     </Section>
   </>
-)
+);
 
-export default Home
+export default Home;
